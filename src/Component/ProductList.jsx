@@ -1,16 +1,17 @@
-import { addToCart, fetch } from "@/redux/actions";
+import { addToCart } from "@/redux/actions";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "../style/product.css";
 import { Button, Image, Text } from "@chakra-ui/react";
+import { fetchProduct } from "../redux/actions";
 const ProductList = () => {
   const dispatch = useDispatch();
 
-  const product = useSelector((state) => state.products);
+  const product = useSelector((state) => state.products.products);
   const loading = useSelector((state) => state.loading);
   const error = useSelector((state) => state.error);
   useEffect(() => {
-    dispatch(fetch());
+    dispatch(fetchProduct());
   }, [dispatch]);
 
   const handleCart = (product) => {

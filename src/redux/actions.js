@@ -10,7 +10,7 @@ export const ADD_TO_CART = "ADD_TO_CART";
 
 // action creators
 
-export const fetch = () => async (dispatch) => {
+export const fetchProduct = () => async (dispatch) => {
   dispatch({ type: FETCH_PRODUCTS_LOADING });
   try {
     const res = await axios.get(`https://fakestoreapi.com/products`);
