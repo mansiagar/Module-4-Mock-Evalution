@@ -11,11 +11,11 @@ const ProductList = () => {
   const error = useSelector((state) => state.error);
   useEffect(() => {
     dispatch(fetch());
-  }, []);
+  }, [dispatch]);
 
   const handleCart = (product) => {
-    console.log(product);
-    // dispatch(addToCart(product))
+    console.log(product, "in product list data");
+    dispatch(addToCart(product));
   };
   return (
     <div>

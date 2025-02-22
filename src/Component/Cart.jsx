@@ -1,9 +1,8 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 const Cart = () => {
-  const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart);
-
+  console.log(cart);
   return <div>Cart page</div>;
 };
 
