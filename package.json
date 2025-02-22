@@ -1,5 +1,6 @@
 {
   "homepage": "https://mansiagar.github.io/Module-4-Mock-Evalution/",
+  "name": "module-4-mock-evalution",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -21,7 +22,7 @@
     "react-icons": "^5.5.0",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.2.0",
-    "redux": "^4.2.1",
+    "redux": "^5.0.1",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^3.1.0"
   },
@@ -34,7 +35,6 @@
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.18",
-    "gh-pages": "^6.3.0",
     "globals": "^15.14.0",
     "vite": "^6.1.0",
     "vite-tsconfig-paths": "^5.1.4"
