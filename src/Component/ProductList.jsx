@@ -1,4 +1,4 @@
-import { fetch } from "@/redux/actions";
+import { addToCart, fetch } from "@/redux/actions";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "../style/product.css";
@@ -12,6 +12,11 @@ const ProductList = () => {
   useEffect(() => {
     dispatch(fetch());
   }, []);
+
+  const handleCart = (product) => {
+    console.log(product);
+    // dispatch(addToCart(product))
+  };
   return (
     <div>
       <div className="product_container">
@@ -25,7 +30,7 @@ const ProductList = () => {
               </div>
               <h1>{item.title}</h1>
               <Text>{item.price}</Text>
-              <Button>Add to Cart</Button>
+              <Button onClick={() => handleCart(item)}>Add to Cart</Button>
             </div>
           );
         })}
